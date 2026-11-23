@@ -1,0 +1,21 @@
+{
+ "video": "evidence/final-run/raw_window.mp4",
+ "fps": 30,
+ "frames": 1412,
+ "duplicated_frames": 84,
+ "seconds": 47.07,
+ "size": [
+  1280,
+  720
+ ],
+ "frame0_utc": "2026-11-22T22:23:22.201341Z",
+ "game_exit_code": 0,
+ "args": [
+  "-SectorNineDemo",
+  "-windowed",
+  "-ResX=1280",
+  "-ResY=720",
+  "-NoSplash",
+  "-nosound"
+ ]
+}

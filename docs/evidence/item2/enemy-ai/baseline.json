@@ -1,0 +1,115 @@
+[
+  {
+    "name": "BP_Turret",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 10.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B2F6C60) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B2F6C60) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B2F6C60) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B402B80) {x: 824.000000, y: 824.000000, z: 65.600000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B435160) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B435160) {x: 20.000000, y: 0.000000, z: 0.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B435160) {x: 60.000000, y: 0.000000, z: 0.000000}>"
+    }
+  },
+  {
+    "name": "BP_Monster_Lv1",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 10.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B435160) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B435160) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B435160) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B4010A0) {x: 628.000000, y: 472.000000, z: 16.000000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B435280) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B435280) {x: 20.000000, y: 0.000000, z: 0.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B435280) {x: 60.000000, y: 0.000000, z: 0.000000}>",
+      "SM_Monster_Lv1": "<Struct 'Vector' (0x000001FE2B435280) {x: -170.000000, y: -0.000008, z: 300.000000}>"
+    }
+  },
+  {
+    "name": "BP_Monster_Lv2",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 20.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B435280) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B435280) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B435280) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B401B90) {x: 628.000000, y: 700.000000, z: 60.800000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 20.000000, y: 0.000000, z: 0.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 60.000000, y: 0.000000, z: 0.000000}>",
+      "SM_Monster_Lv1": "<Struct 'Vector' (0x000001FE2B4353A0) {x: -170.000000, y: -0.000008, z: 400.000000}>"
+    }
+  },
+  {
+    "name": "BP_Monster_Lv3",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 30.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B4038A0) {x: 1324.000000, y: 684.000000, z: 65.600000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 20.000000, y: 0.000000, z: 0.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B4353A0) {x: 60.000000, y: 0.000000, z: 0.000000}>",
+      "SM_Monster_Lv1": "<Struct 'Vector' (0x000001FE2B4353A0) {x: -280.000000, y: -0.000015, z: 900.000000}>"
+    }
+  },
+  {
+    "name": "BP_Monster_Lv4",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 10.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B4103D0) {x: 1496.000000, y: 800.000000, z: 64.000000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 50.000000, y: 0.000000, z: 195.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 60.000000, y: 0.000000, z: 0.000000}>",
+      "GruxPlayerCharacter": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 50.000000, y: 0.000000, z: 195.000000}>"
+    }
+  },
+  {
+    "name": "BP_Monster_Lv5",
+    "props": {
+      "Health": 100.0,
+      "Base_Damage": 10.0,
+      "FireSpeed": 0.5,
+      "Agility": 0.05000000074505806
+    },
+    "components": {
+      "DefaultSceneRoot": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 99999.000000}>",
+      "BillboardComponent_2": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Cube": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "Box": "<Struct 'Vector' (0x000001FE2B4104C0) {x: 1496.000000, y: 800.000000, z: 64.000000}>",
+      "Pviot": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 0.000000, y: 0.000000, z: 20.000000}>",
+      "Cube1": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 50.000000, y: 0.000000, z: 195.000000}>",
+      "ProjectileSpawn": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 60.000000, y: 0.000000, z: 0.000000}>",
+      "RampagePlayerCharacter": "<Struct 'Vector' (0x000001FE2B4355E0) {x: 50.000000, y: 0.000000, z: 195.000000}>"
+    }
+  }
+]

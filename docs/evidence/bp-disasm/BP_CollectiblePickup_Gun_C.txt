@@ -1,0 +1,68 @@
+  Processing function INT_Interact (42 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_PlayerRef, offset: 8
+       Expression:
+         $0: Local variable of type ABP_PlayerChar_C* named PlayerRef. Parameter flags: (Parameter).
+Label_0x15:
+     $5A: .. wire debug site ..
+Label_0x16:
+     $5E: .. debug site ..
+Label_0x17:
+     $46: Local Final Script Function (stack node BP_CollectiblePickup_Gun_C::ExecuteUbergraph_BP_CollectiblePickup_Gun)
+       $1D: literal int32 31
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x29:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_CollectiblePickup_Gun (79 bytes)
+Label_0x0:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xA:
+     $5E: .. debug site ..
+Label_0xB:
+     $1B: Virtual Function named K2_DestroyActor
+       $16: EX_EndFunctionParms
+Label_0x19:
+     $5A: .. wire debug site ..
+Label_0x1A:
+     $6: Jump to offset 0x4C
+Label_0x1F:
+     $5E: .. debug site ..
+Label_0x20:
+     $5A: .. wire debug site ..
+Label_0x21:
+     $5E: .. debug site ..
+Label_0x22:
+     $19: Context
+       ObjectExpression:
+         $0: Local variable of type ABP_PlayerChar_C* named K2Node_Event_PlayerRef.
+       Skip 0xE bytes to offset 0x46
+       R-Value Property: (null)
+       ContextExpression:
+         $45: Local Virtual Script Function named ShowGun
+           $16: EX_EndFunctionParms
+Label_0x46:
+     $5A: .. wire debug site ..
+Label_0x47:
+     $6: Jump to offset 0xA
+Label_0x4C:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x4E:
+     $53: EX_EndOfScript
+
+
+-----------

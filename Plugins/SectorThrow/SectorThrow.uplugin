@@ -1,0 +1,1 @@
+{"FileVersion":3,"Version":1,"VersionName":"1.0","FriendlyName":"Sector Throw","EnabledByDefault":true,"CanContainContent":false,"Modules":[{"Name":"SectorThrow","Type":"Runtime","LoadingPhase":"Default"}],"Plugins":[{"Name":"EnhancedInput","Enabled":true}]}

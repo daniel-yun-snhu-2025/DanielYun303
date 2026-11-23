@@ -1,0 +1,848 @@
+  Processing function CreateReward (88 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $1F: literal ansi string "Trigger Reward"
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 0.000000
+         $1E: literal float 0.660000
+         $1E: literal float 1.000000
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x54:
+     $5A: .. wire debug site ..
+Label_0x55:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x57:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_Turret_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature (132 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent_1, offset: 8
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor_1, offset: 16
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp_1, offset: 24
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex_1, offset: 32
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_bFromSweep, offset: 36
+       Expression:
+         $0: Local variable of type bool named bFromSweep. Parameter flags: (Parameter).
+Label_0x5D:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_SweepResult, offset: 40
+       Expression:
+         $48: Local out variable of type FHitResult named SweepResult. Parameter flags: (Parameter,Out,Reference,Const).
+Label_0x6F:
+     $5A: .. wire debug site ..
+Label_0x70:
+     $5E: .. debug site ..
+Label_0x71:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 44
+       $16: EX_EndFunctionParms
+Label_0x80:
+     $5A: .. wire debug site ..
+Label_0x81:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x83:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_Turret_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature (96 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent, offset: 296
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor, offset: 304
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp, offset: 312
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex, offset: 320
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $5A: .. wire debug site ..
+Label_0x4C:
+     $5E: .. debug site ..
+Label_0x4D:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 294
+       $16: EX_EndFunctionParms
+Label_0x5C:
+     $5A: .. wire debug site ..
+Label_0x5D:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x5F:
+     $53: EX_EndOfScript
+
+  Processing function FollowPlayer (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 437
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function fireAtPlayer (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 648
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function ReceiveAnyDamage (96 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_Damage, offset: 816
+       Expression:
+         $0: Local variable of type float named Damage. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_DamageType, offset: 824
+       Expression:
+         $0: Local variable of type UDamageType* named DamageType. Parameter flags: (Parameter,Const).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_InstigatedBy, offset: 832
+       Expression:
+         $0: Local variable of type AController* named InstigatedBy. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_DamageCauser, offset: 840
+       Expression:
+         $0: Local variable of type AActor* named DamageCauser. Parameter flags: (Parameter).
+Label_0x4B:
+     $5A: .. wire debug site ..
+Label_0x4C:
+     $5E: .. debug site ..
+Label_0x4D:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 923
+       $16: EX_EndFunctionParms
+Label_0x5C:
+     $5A: .. wire debug site ..
+Label_0x5D:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x5F:
+     $53: EX_EndOfScript
+
+  Processing function Damage (42 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_CustomEvent_Damage, offset: 856
+       Expression:
+         $0: Local variable of type double named Damage. Parameter flags: (Parameter).
+Label_0x15:
+     $5A: .. wire debug site ..
+Label_0x16:
+     $5E: .. debug site ..
+Label_0x17:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 1318
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x29:
+     $53: EX_EndOfScript
+
+  Processing function CreateItem (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 1325
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function ReceiveDestroyed (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Turret_C::ExecuteUbergraph_BP_Turret)
+       $1D: literal int32 1653
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_Turret (1815 bytes)
+Label_0x0:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xA:
+     $5E: .. debug site ..
+Label_0xB:
+     $68: Call Math (stack node GameplayStatics::OpenLevel)
+       $17: EX_Self
+       $21: literal name MainMenuMap
+       $27: EX_True
+       $1F: literal ansi string ""
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $6: Jump to offset 0x714
+Label_0x2C:
+     $5E: .. debug site ..
+Label_0x2D:
+     $5A: .. wire debug site ..
+Label_0x2E:
+     $5E: .. debug site ..
+Label_0x2F:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char.
+       Expression:
+         $2E: DynamicCast to BP_PlayerChar_C of expr:
+           $0: Local variable of type AActor* named K2Node_ComponentBoundEvent_OtherActor_1.
+Label_0x53:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+       Expression:
+         $38: Cast of type 1 (ObjectToBool)
+           Argument:
+             $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char.
+Label_0x70:
+     $5A: .. wire debug site ..
+Label_0x71:
+     $7: Jump to offset 0x714 if not expr:
+       $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+Label_0x7F:
+     $5A: .. wire debug site ..
+Label_0x80:
+     $5E: .. debug site ..
+Label_0x81:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTimerHandle named CallFunc_K2_SetTimer_ReturnValue_1.
+       Expression:
+         $68: Call Math (stack node KismetSystemLibrary::K2_SetTimer)
+           $17: EX_Self
+           $1F: literal ansi string "FollowPlayer"
+           $1: Instance variable of type float named Agility.
+           $27: EX_True
+           $28: EX_False
+           $1E: literal float 0.000000
+           $1E: literal float 0.000000
+           $16: EX_EndFunctionParms
+Label_0xC1:
+     $5A: .. wire debug site ..
+Label_0xC2:
+     $5E: .. debug site ..
+Label_0xC3:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type float named CallFunc_K2_SetTimer_Time_ImplicitCast.
+       Expression:
+         $38: Cast of type 3 (DoubleToFloat)
+           Argument:
+             $1: Instance variable of type double named FireSpeed.
+Label_0xE0:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTimerHandle named CallFunc_K2_SetTimer_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetSystemLibrary::K2_SetTimer)
+           $17: EX_Self
+           $1F: literal ansi string "fireAtPlayer"
+           $0: Local variable of type float named CallFunc_K2_SetTimer_Time_ImplicitCast.
+           $27: EX_True
+           $28: EX_False
+           $1E: literal float 0.000000
+           $1E: literal float 0.000000
+           $16: EX_EndFunctionParms
+Label_0x120:
+     $5A: .. wire debug site ..
+Label_0x121:
+     $6: Jump to offset 0x714
+Label_0x126:
+     $5E: .. debug site ..
+Label_0x127:
+     $5A: .. wire debug site ..
+Label_0x128:
+     $5E: .. debug site ..
+Label_0x129:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char_1.
+       Expression:
+         $2E: DynamicCast to BP_PlayerChar_C of expr:
+           $0: Local variable of type AActor* named K2Node_ComponentBoundEvent_OtherActor.
+Label_0x14D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named K2Node_DynamicCast_bSuccess_1.
+       Expression:
+         $38: Cast of type 1 (ObjectToBool)
+           Argument:
+             $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char_1.
+Label_0x16A:
+     $5A: .. wire debug site ..
+Label_0x16B:
+     $7: Jump to offset 0x714 if not expr:
+       $0: Local variable of type bool named K2Node_DynamicCast_bSuccess_1.
+Label_0x179:
+     $5A: .. wire debug site ..
+Label_0x17A:
+     $5E: .. debug site ..
+Label_0x17B:
+     $68: Call Math (stack node KismetSystemLibrary::K2_ClearTimer)
+       $17: EX_Self
+       $1F: literal ansi string "FollowPlayer"
+       $16: EX_EndFunctionParms
+Label_0x194:
+     $5A: .. wire debug site ..
+Label_0x195:
+     $5E: .. debug site ..
+Label_0x196:
+     $68: Call Math (stack node KismetSystemLibrary::K2_ClearTimer)
+       $17: EX_Self
+       $1F: literal ansi string "fireAtPlayer"
+       $16: EX_EndFunctionParms
+Label_0x1AF:
+     $5A: .. wire debug site ..
+Label_0x1B0:
+     $6: Jump to offset 0x714
+Label_0x1B5:
+     $5E: .. debug site ..
+Label_0x1B6:
+     $5A: .. wire debug site ..
+Label_0x1B7:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type ACharacter* named CallFunc_GetPlayerCharacter_ReturnValue.
+       Expression:
+         $68: Call Math (stack node GameplayStatics::GetPlayerCharacter)
+           $17: EX_Self
+           $1D: literal int32 0
+           $16: EX_EndFunctionParms
+Label_0x1D1:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+       Expression:
+         $1C: Final Function (stack node Actor::K2_GetActorLocation)
+           $16: EX_EndFunctionParms
+Label_0x1ED:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $0: Local variable of type ACharacter* named CallFunc_GetPlayerCharacter_ReturnValue.
+           Skip 0xA bytes to offset 0x21F
+           R-Value Property: CallFunc_K2_GetActorLocation_ReturnValue_1
+           ContextExpression:
+             $1C: Final Function (stack node Actor::K2_GetActorLocation)
+               $16: EX_EndFunctionParms
+Label_0x21F:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FRotator named CallFunc_FindLookAtRotation_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::FindLookAtRotation)
+           $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+           $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+           $16: EX_EndFunctionParms
+Label_0x24D:
+     $5E: .. debug site ..
+Label_0x24E:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UArrowComponent* named Pviot.
+       Skip 0x1E bytes to offset 0x282
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node SceneComponent::K2_SetWorldRotation)
+           $0: Local variable of type FRotator named CallFunc_FindLookAtRotation_ReturnValue.
+           $28: EX_False
+           $0: Local variable of type FHitResult named CallFunc_K2_SetWorldRotation_SweepHitResult.
+           $28: EX_False
+           $16: EX_EndFunctionParms
+Label_0x282:
+     $5A: .. wire debug site ..
+Label_0x283:
+     $6: Jump to offset 0x714
+Label_0x288:
+     $5E: .. debug site ..
+Label_0x289:
+     $5A: .. wire debug site ..
+Label_0x28A:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UArrowComponent* named ProjectileSpawn.
+           Skip 0xA bytes to offset 0x2BC
+           R-Value Property: CallFunc_K2_GetComponentToWorld_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node SceneComponent::K2_GetComponentToWorld)
+               $16: EX_EndFunctionParms
+Label_0x2BC:
+     $5E: .. debug site ..
+Label_0x2BD:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type AActor* named CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue.
+       Expression:
+         $68: Call Math (stack node GameplayStatics::BeginDeferredActorSpawnFromClass)
+           $17: EX_Self
+           $20: EX_ObjectConst (0000061A62CD6900:BlueprintGeneratedClass /Game/Enemy/Turret/BP_TurretProjectile.BP_TurretProjectile_C)
+           $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue.
+           $24: literal byte 0
+           $2A: EX_NoObject
+           $24: literal byte 1
+           $16: EX_EndFunctionParms
+Label_0x2E9:
+     $5A: .. wire debug site ..
+Label_0x2EA:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UArrowComponent* named ProjectileSpawn.
+           Skip 0xA bytes to offset 0x31C
+           R-Value Property: CallFunc_K2_GetComponentToWorld_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node SceneComponent::K2_GetComponentToWorld)
+               $16: EX_EndFunctionParms
+Label_0x31C:
+     $5E: .. debug site ..
+Label_0x31D:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_TurretProjectile_C* named CallFunc_FinishSpawningActor_ReturnValue.
+       Expression:
+         $68: Call Math (stack node GameplayStatics::FinishSpawningActor)
+           $0: Local variable of type AActor* named CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue.
+           $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue.
+           $24: literal byte 1
+           $16: EX_EndFunctionParms
+Label_0x345:
+     $5A: .. wire debug site ..
+Label_0x346:
+     $5E: .. debug site ..
+Label_0x347:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type float named K2Node_VariableSet_Base_Damage_ImplicitCast.
+       Expression:
+         $38: Cast of type 3 (DoubleToFloat)
+           Argument:
+             $1: Instance variable of type double named Base_Damage.
+Label_0x364:
+     $F: Let (Variable = Expression)
+       Variable:
+         $19: Context
+           ObjectExpression:
+             $0: Local variable of type ABP_TurretProjectile_C* named CallFunc_FinishSpawningActor_ReturnValue.
+           Skip 0x9 bytes to offset 0x38C
+           R-Value Property: Base Damage
+           ContextExpression:
+             $1: Instance variable of type float named Base Damage.
+       Expression:
+         $0: Local variable of type float named K2Node_VariableSet_Base_Damage_ImplicitCast.
+Label_0x395:
+     $5A: .. wire debug site ..
+Label_0x396:
+     $6: Jump to offset 0x714
+Label_0x39B:
+     $5E: .. debug site ..
+Label_0x39C:
+     $5A: .. wire debug site ..
+Label_0x39D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FString named CallFunc_Conv_DoubleToString_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetStringLibrary::Conv_DoubleToString)
+           $0: Local variable of type double named K2Node_CustomEvent_Damage.
+           $16: EX_EndFunctionParms
+Label_0x3C2:
+     $5E: .. debug site ..
+Label_0x3C3:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $0: Local variable of type FString named CallFunc_Conv_DoubleToString_ReturnValue.
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 0.126117
+         $1E: literal float 1.000000
+         $1E: literal float 0.000000
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x40D:
+     $5A: .. wire debug site ..
+Label_0x40E:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Subtract_DoubleDouble_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::Subtract_DoubleDouble)
+           $1: Instance variable of type double named Health.
+           $0: Local variable of type double named K2Node_CustomEvent_Damage.
+           $16: EX_EndFunctionParms
+Label_0x43C:
+     $5E: .. debug site ..
+Label_0x43D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $1: Instance variable of type double named Health.
+       Expression:
+         $0: Local variable of type double named CallFunc_Subtract_DoubleDouble_ReturnValue.
+Label_0x458:
+     $5A: .. wire debug site ..
+Label_0x459:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FString named CallFunc_Conv_DoubleToString_ReturnValue_1.
+       Expression:
+         $68: Call Math (stack node KismetStringLibrary::Conv_DoubleToString)
+           $1: Instance variable of type double named Health.
+           $16: EX_EndFunctionParms
+Label_0x47E:
+     $5E: .. debug site ..
+Label_0x47F:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $0: Local variable of type FString named CallFunc_Conv_DoubleToString_ReturnValue_1.
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 1.000000
+         $1E: literal float 0.000000
+         $1E: literal float 0.168745
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x4C9:
+     $5A: .. wire debug site ..
+Label_0x4CA:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_Less_DoubleDouble_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::Less_DoubleDouble)
+           $1: Instance variable of type double named Health.
+           $37: literal double 0.000000
+           $16: EX_EndFunctionParms
+Label_0x4F0:
+     $5E: .. debug site ..
+Label_0x4F1:
+     $5A: .. wire debug site ..
+Label_0x4F2:
+     $7: Jump to offset 0x714 if not expr:
+       $0: Local variable of type bool named CallFunc_Less_DoubleDouble_ReturnValue.
+Label_0x500:
+     $5A: .. wire debug site ..
+Label_0x501:
+     $5E: .. debug site ..
+Label_0x502:
+     $45: Local Virtual Script Function named CreateItem
+       $16: EX_EndFunctionParms
+Label_0x510:
+     $5A: .. wire debug site ..
+Label_0x511:
+     $5E: .. debug site ..
+Label_0x512:
+     $1B: Virtual Function named K2_DestroyActor
+       $16: EX_EndFunctionParms
+Label_0x520:
+     $5A: .. wire debug site ..
+Label_0x521:
+     $6: Jump to offset 0x714
+Label_0x526:
+     $5E: .. debug site ..
+Label_0x527:
+     $5A: .. wire debug site ..
+Label_0x528:
+     $6: Jump to offset 0x39D
+Label_0x52D:
+     $5E: .. debug site ..
+Label_0x52E:
+     $5A: .. wire debug site ..
+Label_0x52F:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue_1.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $19: Context
+               ObjectExpression:
+                 $17: EX_Self
+               Skip 0x9 bytes to offset 0x559
+               R-Value Property: ProjectileSpawn
+               ContextExpression:
+                 $1: Instance variable of type UArrowComponent* named ProjectileSpawn.
+           Skip 0xA bytes to offset 0x56F
+           R-Value Property: CallFunc_K2_GetComponentToWorld_ReturnValue_1
+           ContextExpression:
+             $1C: Final Function (stack node SceneComponent::K2_GetComponentToWorld)
+               $16: EX_EndFunctionParms
+Label_0x56F:
+     $5E: .. debug site ..
+Label_0x570:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type AActor* named CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1.
+       Expression:
+         $68: Call Math (stack node GameplayStatics::BeginDeferredActorSpawnFromClass)
+           $17: EX_Self
+           $20: EX_ObjectConst (0000061A62CD3100:BlueprintGeneratedClass /Game/Interactables/BP_PhysicsPickup.BP_PhysicsPickup_C)
+           $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue_1.
+           $24: literal byte 0
+           $2A: EX_NoObject
+           $24: literal byte 1
+           $16: EX_EndFunctionParms
+Label_0x59C:
+     $5A: .. wire debug site ..
+Label_0x59D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue_1.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $19: Context
+               ObjectExpression:
+                 $17: EX_Self
+               Skip 0x9 bytes to offset 0x5C7
+               R-Value Property: ProjectileSpawn
+               ContextExpression:
+                 $1: Instance variable of type UArrowComponent* named ProjectileSpawn.
+           Skip 0xA bytes to offset 0x5DD
+           R-Value Property: CallFunc_K2_GetComponentToWorld_ReturnValue_1
+           ContextExpression:
+             $1C: Final Function (stack node SceneComponent::K2_GetComponentToWorld)
+               $16: EX_EndFunctionParms
+Label_0x5DD:
+     $5E: .. debug site ..
+Label_0x5DE:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PhysicsPickup_C* named CallFunc_FinishSpawningActor_ReturnValue_1.
+       Expression:
+         $68: Call Math (stack node GameplayStatics::FinishSpawningActor)
+           $0: Local variable of type AActor* named CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1.
+           $0: Local variable of type FTransform named CallFunc_K2_GetComponentToWorld_ReturnValue_1.
+           $24: literal byte 1
+           $16: EX_EndFunctionParms
+Label_0x606:
+     $5A: .. wire debug site ..
+Label_0x607:
+     $5E: .. debug site ..
+Label_0x608:
+     $F: Let (Variable = Expression)
+       Variable:
+         $19: Context
+           ObjectExpression:
+             $0: Local variable of type ABP_PhysicsPickup_C* named CallFunc_FinishSpawningActor_ReturnValue_1.
+           Skip 0x9 bytes to offset 0x630
+           R-Value Property: PickupColor
+           ContextExpression:
+             $1: Instance variable of type FLinearColor named PickupColor.
+       Expression:
+         $1: Instance variable of type FLinearColor named RewardItemColor.
+Label_0x639:
+     $5A: .. wire debug site ..
+Label_0x63A:
+     $5E: .. debug site ..
+Label_0x63B:
+     $19: Context
+       ObjectExpression:
+         $0: Local variable of type ABP_PhysicsPickup_C* named CallFunc_FinishSpawningActor_ReturnValue_1.
+       Skip 0xE bytes to offset 0x65F
+       R-Value Property: (null)
+       ContextExpression:
+         $45: Local Virtual Script Function named Apply New Mat
+           $16: EX_EndFunctionParms
+Label_0x65F:
+     $5A: .. wire debug site ..
+Label_0x660:
+     $5E: .. debug site ..
+Label_0x661:
+     $45: Local Virtual Script Function named CreateReward
+       $16: EX_EndFunctionParms
+Label_0x66F:
+     $5A: .. wire debug site ..
+Label_0x670:
+     $6: Jump to offset 0x714
+Label_0x675:
+     $5E: .. debug site ..
+Label_0x676:
+     $5A: .. wire debug site ..
+Label_0x677:
+     $5E: .. debug site ..
+Label_0x678:
+     $31: set array
+       $0: Local variable of type TArray<ABP_Turret_C*> named CallFunc_GetAllActorsOfClass_OutActors. Parameter flags: (Reference).
+       $32: EX_EndArray
+Label_0x683:
+     $68: Call Math (stack node GameplayStatics::GetAllActorsOfClass)
+       $17: EX_Self
+       $20: EX_ObjectConst (0000061A62CD6200:BlueprintGeneratedClass /Game/Enemy/Turret/BP_Turret.BP_Turret_C)
+       $0: Local variable of type TArray<ABP_Turret_C*> named CallFunc_GetAllActorsOfClass_OutActors. Parameter flags: (Reference).
+       $16: EX_EndFunctionParms
+Label_0x6A0:
+     $5A: .. wire debug site ..
+Label_0x6A1:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type int32 named CallFunc_Array_Length_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $20: EX_ObjectConst (0000061A3CD4CF30:KismetArrayLibrary /Script/Engine.Default__KismetArrayLibrary)
+           Skip 0x13 bytes to offset 0x6DC
+           R-Value Property: CallFunc_Array_Length_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node KismetArrayLibrary::Array_Length)
+               $0: Local variable of type TArray<ABP_Turret_C*> named CallFunc_GetAllActorsOfClass_OutActors. Parameter flags: (Reference).
+               $16: EX_EndFunctionParms
+Label_0x6DC:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_EqualEqual_IntInt_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::EqualEqual_IntInt)
+           $0: Local variable of type int32 named CallFunc_Array_Length_ReturnValue.
+           $1D: literal int32 0
+           $16: EX_EndFunctionParms
+Label_0x6FE:
+     $5E: .. debug site ..
+Label_0x6FF:
+     $5A: .. wire debug site ..
+Label_0x700:
+     $7: Jump to offset 0x714 if not expr:
+       $0: Local variable of type bool named CallFunc_EqualEqual_IntInt_ReturnValue.
+Label_0x70E:
+     $5A: .. wire debug site ..
+Label_0x70F:
+     $6: Jump to offset 0xA
+Label_0x714:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x716:
+     $53: EX_EndOfScript
+
+
+-----------
