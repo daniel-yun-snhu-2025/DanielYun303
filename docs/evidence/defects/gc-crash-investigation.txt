@@ -1,0 +1,119 @@
+# GC crash: stale plugin object code (ASectorNineSentinel layout mismatch)
+
+## Run 3 (editor -game, from menu): natural GC during combat crashed
+Source: milestone-three/evidence/demo-editor-run3.log
+[2026.11.22-21.08.49:985][646]LogTemp: Display: SectorDemo enemy_state Patrol dist=1157 health=100
+[2026.11.22-21.08.50:068][658]LogTemp: Display: SectorDemo enemy_state Alert dist=1109 health=100
+[2026.11.22-21.08.50:311][690]LogTemp: Display: SectorDemo enemy_state Attack dist=1089 health=100
+[2026.11.22-21.09.12:339][564]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0xffffffffffffffff
+[2026.11.22-21.09.12:339][564]LogWindows: Error: Crash in runnable thread Background Worker #15
+
+## Run 4/5: forced GC right after facility load crashed (from menu)
+Source: milestone-three/evidence/demo-editor-run5.log
+[2026.11.22-21.21.54:735][806]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.21.55:710][806]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x000000003c93d682
+
+## Bisect: direct facility load, -DisablePlugins=none
+Source: milestone-three/evidence/gcbisect-none.log
+[2026.11.22-21.13.14:222][  0]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.13.14:336][  3]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.13.20:859][873]LogTemp: Display: SectorDemo gc_request gun_pickup_destroyed
+[2026.11.22-21.13.21:816][873]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000040d49016
+
+## Bisect: direct facility load, -DisablePlugins=SectorThrow
+Source: milestone-three/evidence/gcbisect-SectorThrow.log
+[2026.11.22-21.13.41:602][  0]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.13.41:726][  3]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.13.48:240][832]LogTemp: Display: SectorDemo gc_request gun_pickup_destroyed
+[2026.11.22-21.13.48:346][835]LogTemp: Display: SectorDemo gc_done gun_pickup_destroyed
+[2026.11.22-21.13.51:685][290]LogTemp: Display: SectorDemo gc_request key_held
+[2026.11.22-21.13.52:571][290]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000041216868
+
+## Bisect: direct facility load, -DisablePlugins=SectorFieldUI
+Source: milestone-three/evidence/gcbisect-SectorFieldUI.log
+[2026.11.22-21.14.15:493][  0]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.14.15:643][  3]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.14.22:132][803]LogTemp: Display: SectorDemo gc_request gun_pickup_destroyed
+[2026.11.22-21.14.22:240][806]LogTemp: Display: SectorDemo gc_done gun_pickup_destroyed
+[2026.11.22-21.14.25:581][225]LogTemp: Display: SectorDemo gc_request key_held
+[2026.11.22-21.14.26:637][225]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000041217d46
+
+## Bisect: direct facility load, -DisablePlugins=SectorNineEnemyAI
+Source: milestone-three/evidence/gcbisect-SectorNineEnemyAI.log
+[2026.11.22-21.14.59:607][  0]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.14.59:801][  3]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.15.06:232][960]LogTemp: Display: SectorDemo gc_request gun_pickup_destroyed
+[2026.11.22-21.15.06:344][963]LogTemp: Display: SectorDemo gc_done gun_pickup_destroyed
+[2026.11.22-21.15.09:674][486]LogTemp: Display: SectorDemo gc_request key_held
+[2026.11.22-21.15.09:695][489]LogTemp: Display: SectorDemo gc_done key_held
+[2026.11.22-21.15.14:608][249]LogTemp: Display: SectorDemo gc_request door1_passed
+[2026.11.22-21.15.14:632][252]LogTemp: Display: SectorDemo gc_done door1_passed
+[2026.11.22-21.15.18:631][868]LogTemp: Display: SectorDemo gc_request key_landed
+[2026.11.22-21.15.18:648][871]LogTemp: Display: SectorDemo gc_done key_landed
+[2026.11.22-21.15.24:291][841]LogTemp: Display: SectorDemo gc_request door2_passed
+[2026.11.22-21.15.24:316][844]LogTemp: Display: SectorDemo gc_done door2_passed
+
+## A/B: original (HEAD) BP_Turret + child Blueprints, same plugins, from menu
+Source: milestone-three/evidence/gc-ab-original-turret.log
+[2026.11.22-21.25.50:542][812]LogTemp: Display: SectorDemo gc_request facility_loaded
+[2026.11.22-21.25.50:689][815]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.25.56:867][605]LogTemp: Display: SectorDemo gc_request gun_pickup_destroyed
+[2026.11.22-21.25.56:972][608]LogTemp: Display: SectorDemo gc_done gun_pickup_destroyed
+[2026.11.22-21.26.00:312][ 32]LogTemp: Display: SectorDemo gc_request key_held
+[2026.11.22-21.26.00:335][ 35]LogTemp: Display: SectorDemo gc_done key_held
+[2026.11.22-21.26.05:263][644]LogTemp: Display: SectorDemo gc_request door1_passed
+[2026.11.22-21.26.05:289][647]LogTemp: Display: SectorDemo gc_done door1_passed
+[2026.11.22-21.26.09:317][143]LogTemp: Display: SectorDemo gc_request key_landed
+[2026.11.22-21.26.09:340][146]LogTemp: Display: SectorDemo gc_done key_landed
+[2026.11.22-21.26.14:993][851]LogTemp: Display: SectorDemo gc_request door2_passed
+[2026.11.22-21.26.15:020][854]LogTemp: Display: SectorDemo gc_done door2_passed
+[2026.11.22-21.26.18:022][262]LogTemp: Display: SectorDemo finish complete
+
+## Audit before GC (reparented turret, from menu): garbage in native Pivot; crash address = value + 0xC
+Source: milestone-three/evidence/gc-audit-menu.log
+[2026.11.22-21.29.17:225][711]LogTemp: Display: SectorDemo audit facility_loaded objects=41918 object_refs=81171 bad=8 BP_Monster_Lv1_C :: /Game/Maps/TestEnvironment.TestEnvironment:PersistentLevel.BP_Monster_Lv1_C_1.Pivot = 0x3cadaa94; BP_Monster_Lv2_C :: /Game/Maps/TestEnvironment.TestEnvironment:PersistentLevel.BP_Monster_Lv2_C_0.Pivot = 0x3cadaa94; BP_Monster_Lv2_C :: /Game/Maps/TestEnvironmen
+[2026.11.22-21.29.18:928][711]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x000000003cadaaa0
+
+## Layout dump: reflection offsets; Pivot holds the Elapsed float as time advances (0x412198be = 10.1 at t=10 s)
+Source: milestone-three/evidence/gc-layout.log
+[2026.11.22-21.31.52:513][  0]LogTemp: Display: SectorDemo audit facility_loaded objects=41825 object_refs=81072 bad=0
+[2026.11.22-21.31.52:513][  0]LogTemp: Display: SectorDemo layout BP_Monster_Lv1_C size=1280 native=0: UberGraphFrame@1256+16(StructProperty) SM_Monster_Lv1@1272+8(ObjectProperty)
+[2026.11.22-21.31.52:513][  0]LogTemp: Display: SectorDemo layout BP_Turret_C size=1252 native=0: UberGraphFrame@1144+16(StructProperty) Box@1160+8(ObjectProperty) ProjectileSpawn@1168+8(ObjectProperty) Cube1@1176+8(ObjectProperty) Pviot@1184+8(ObjectProperty) Cube@1192+8(ObjectProperty) DefaultSceneRoot@1200+8(ObjectProperty) Base_Damage@1208+8(DoubleProperty) Health@1216+8(DoubleProperty) Reward
+[2026.11.22-21.31.52:513][  0]LogTemp: Display: SectorDemo layout SectorNineSentinel size=1144 native=1: EnemyState@1056+1(EnumProperty) DetectionRangeMultiplier@1060+4(FloatProperty) ScanSpeedDegrees@1064+4(FloatProperty) AlertSeconds@1068+4(FloatProperty) SearchSeconds@1072+4(FloatProperty) PlayerType@1080+8(ClassProperty) Sensor@1088+8(ObjectProperty) Pivot@1096+8(ObjectProperty)
+[2026.11.22-21.31.52:513][  0]LogTemp: Display: SectorDemo layout AActor size=1056
+[2026.11.22-21.31.59:159][793]LogTemp: Display: SectorDemo audit gun_pickup_destroyed objects=38961 object_refs=70822 bad=0
+[2026.11.22-21.32.02:609][193]LogTemp: Display: SectorDemo audit key_held objects=38925 object_refs=70723 bad=8 BP_Monster_Lv1_C :: /Game/Maps/TestEnvironment.TestEnvironment:PersistentLevel.BP_Monster_Lv1_C_1.Pivot = 0x412198be; BP_Monster_Lv2_C :: /Game/Maps/TestEnvironment.TestEnvironment:PersistentLevel.BP_Monster_Lv2_C_0.Pivot = 0x412198be; BP_Monster_Lv2_C :: /Game/Maps/TestEnvironment.TestE
+
+## After deleting plugin Intermediate/Binaries and rebuilding: 15/15 forced GCs, bad=0
+Source: milestone-three/evidence/demo-editor-run6-clean.log
+[2026.11.22-21.36.05:654][806]LogTemp: Display: SectorDemo audit facility_loaded objects=41918 object_refs=81171 bad=0
+[2026.11.22-21.36.05:989][809]LogTemp: Display: SectorDemo gc_done facility_loaded
+[2026.11.22-21.36.12:267][537]LogTemp: Display: SectorDemo audit gun_pickup_destroyed objects=38961 object_refs=70822 bad=0
+[2026.11.22-21.36.12:378][540]LogTemp: Display: SectorDemo gc_done gun_pickup_destroyed
+[2026.11.22-21.36.15:712][929]LogTemp: Display: SectorDemo audit key_held objects=38925 object_refs=70722 bad=0
+[2026.11.22-21.36.15:739][932]LogTemp: Display: SectorDemo gc_done key_held
+[2026.11.22-21.36.20:739][537]LogTemp: Display: SectorDemo audit door1_passed objects=38925 object_refs=70733 bad=0
+[2026.11.22-21.36.20:764][540]LogTemp: Display: SectorDemo gc_done door1_passed
+[2026.11.22-21.36.24:810][  1]LogTemp: Display: SectorDemo audit key_landed objects=38925 object_refs=70721 bad=0
+[2026.11.22-21.36.24:834][  4]LogTemp: Display: SectorDemo gc_done key_landed
+[2026.11.22-21.36.30:458][700]LogTemp: Display: SectorDemo audit door2_passed objects=38928 object_refs=70752 bad=0
+[2026.11.22-21.36.30:485][703]LogTemp: Display: SectorDemo gc_done door2_passed
+[2026.11.22-21.36.33:701][ 95]LogTemp: Display: SectorDemo audit combat_3s_state_Attack_shots_8 objects=38964 object_refs=71000 bad=0
+[2026.11.22-21.36.33:725][ 98]LogTemp: Display: SectorDemo gc_done combat_3s_state_Attack_shots_8
+[2026.11.22-21.36.36:715][457]LogTemp: Display: SectorDemo audit combat_6s_state_Attack_shots_15 objects=38964 object_refs=70998 bad=0
+[2026.11.22-21.36.36:739][460]LogTemp: Display: SectorDemo gc_done combat_6s_state_Attack_shots_15
+[2026.11.22-21.36.39:716][822]LogTemp: Display: SectorDemo audit combat_9s_state_Attack_shots_23 objects=38964 object_refs=71000 bad=0
+[2026.11.22-21.36.39:739][825]LogTemp: Display: SectorDemo gc_done combat_9s_state_Attack_shots_23
+[2026.11.22-21.36.42:723][175]LogTemp: Display: SectorDemo audit combat_12s_state_Attack_shots_30 objects=38964 object_refs=70998 bad=0
+[2026.11.22-21.36.42:745][178]LogTemp: Display: SectorDemo gc_done combat_12s_state_Attack_shots_30
+[2026.11.22-21.36.45:718][536]LogTemp: Display: SectorDemo audit combat_15s_state_Attack_shots_38 objects=38964 object_refs=71000 bad=0
+[2026.11.22-21.36.45:740][539]LogTemp: Display: SectorDemo gc_done combat_15s_state_Attack_shots_38
+[2026.11.22-21.36.48:730][894]LogTemp: Display: SectorDemo audit combat_18s_state_Attack_shots_45 objects=38967 object_refs=71020 bad=0
+[2026.11.22-21.36.48:752][897]LogTemp: Display: SectorDemo gc_done combat_18s_state_Attack_shots_45
+[2026.11.22-21.36.51:729][252]LogTemp: Display: SectorDemo audit combat_21s_state_Attack_shots_53 objects=38964 object_refs=70999 bad=0
+[2026.11.22-21.36.51:752][255]LogTemp: Display: SectorDemo gc_done combat_21s_state_Attack_shots_53
+[2026.11.22-21.36.54:734][602]LogTemp: Display: SectorDemo audit combat_24s_state_Attack_shots_60 objects=38964 object_refs=70999 bad=0
+[2026.11.22-21.36.54:756][605]LogTemp: Display: SectorDemo gc_done combat_24s_state_Attack_shots_60
+[2026.11.22-21.36.57:738][956]LogTemp: Display: SectorDemo audit combat_27s_state_Attack_shots_68 objects=38964 object_refs=70999 bad=0
+[2026.11.22-21.36.57:759][959]LogTemp: Display: SectorDemo gc_done combat_27s_state_Attack_shots_68
+[2026.11.22-21.37.02:430][515]LogTemp: Display: SectorDemo finish complete

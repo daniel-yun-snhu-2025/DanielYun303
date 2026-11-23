@@ -1,0 +1,11 @@
+# Normal launch (no -SectorNineDemo) of the build extracted from yun_daniel_artifact3refined.zip
+LogPluginManager: Mounting Project plugin SectorDemo
+LogPluginManager: Mounting Project plugin SectorFieldUI
+LogPluginManager: Mounting Project plugin SectorNineEnemyAI
+LogPluginManager: Mounting Project plugin SectorThrow
+LogInit: Command Line: -windowed -ResX=1280 -ResY=720 -NoSplash -nosound
+LogLoad: LoadMap: /Game/Menu/MainMenuMap?Name=Player
+LogLoad: Took 0.090204 seconds to LoadMap(/Game/Menu/MainMenuMap)
+LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Menu/MainMenuMap
+SectorDemo driver log lines (LogTemp ... SectorDemo): 0
+Saved/SectorDemo written by this launch: no (folder contents are from the earlier -SectorNineDemo run, finished_utc "finished_utc": "2026-11-22T22:37:56.138Z")

@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "variants": [
+    {
+      "level": 1,
+      "states": [
+        "PATROL",
+        "ALERT",
+        "ATTACK",
+        "SEARCH",
+        "PATROL"
+      ],
+      "diagnostic": [
+        "<Struct 'Vector' (0x0000020CB6BADC30) {x: -0.000000, y: 10440.000000, z: 5000.000000}>",
+        "<Struct 'Vector' (0x0000020CB6BADC30) {x: 280.000000, y: 10440.000000, z: 5000.000000}>",
+        true,
+        true,
+        "BP_PlayerChar_C",
+        "<CollisionEnabled.QUERY_ONLY: 1>",
+        "<Struct 'Vector' (0x0000020CB6BADC30) {x: 0.000000, y: 10000.000000, z: 5000.000000}>"
+      ],
+      "projectile_observed": true
+    },
+    {
+      "level": 2,
+      "states": [
+        "PATROL",
+        "ALERT",
+        "ATTACK",
+        "SEARCH",
+        "PATROL"
+      ],
+      "diagnostic": [
+        "<Struct 'Vector' (0x0000020CB6BADB90) {x: -237.965011, y: 19626.054983, z: 5012.758427}>",
+        "<Struct 'Vector' (0x0000020CB6BADB90) {x: 42.034989, y: 19626.054983, z: 5012.758427}>",
+        true,
+        true,
+        "BP_PlayerChar_C",
+        "<CollisionEnabled.QUERY_ONLY: 1>",
+        "<Struct 'Vector' (0x0000020CB6BADB90) {x: 0.000000, y: 20000.000000, z: 5000.000000}>"
+      ],
+      "projectile_observed": true
+    },
+    {
+      "level": 3,
+      "states": [
+        "PATROL",
+        "ALERT",
+        "ATTACK",
+        "SEARCH",
+        "PATROL"
+      ],
+      "diagnostic": [
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: -238.989725, y: 29624.444719, z: 5032.667144}>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 41.010275, y: 29624.444719, z: 5032.667144}>",
+        true,
+        true,
+        "BP_PlayerChar_C",
+        "<CollisionEnabled.QUERY_ONLY: 1>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 0.000000, y: 30000.000000, z: 5000.000000}>"
+      ],
+      "projectile_observed": true
+    },
+    {
+      "level": 4,
+      "states": [
+        "PATROL",
+        "ALERT",
+        "ATTACK",
+        "SEARCH",
+        "PATROL"
+      ],
+      "diagnostic": [
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: -189.866751, y: 39701.637963, z: 5021.347402}>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 90.133249, y: 39701.637963, z: 5021.347402}>",
+        true,
+        true,
+        "BP_PlayerChar_C",
+        "<CollisionEnabled.QUERY_ONLY: 1>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 0.000000, y: 40000.000000, z: 5000.000000}>"
+      ],
+      "projectile_observed": true
+    },
+    {
+      "level": 5,
+      "states": [
+        "PATROL",
+        "ALERT",
+        "ATTACK",
+        "SEARCH",
+        "PATROL"
+      ],
+      "diagnostic": [
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: -189.866751, y: 49701.637963, z: 5021.347402}>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 90.133249, y: 49701.637963, z: 5021.347402}>",
+        true,
+        true,
+        "BP_PlayerChar_C",
+        "<CollisionEnabled.QUERY_ONLY: 1>",
+        "<Struct 'Vector' (0x0000020CB6BADB40) {x: 0.000000, y: 50000.000000, z: 5000.000000}>"
+      ],
+      "projectile_observed": true
+    }
+  ]
+}

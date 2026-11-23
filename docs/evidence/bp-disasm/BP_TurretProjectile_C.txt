@@ -1,0 +1,283 @@
+  Processing function ReceiveBeginPlay (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_TurretProjectile_C::ExecuteUbergraph_BP_TurretProjectile)
+       $1D: literal int32 196
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_TurretProjectile_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature (132 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent_1, offset: 8
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor_1, offset: 16
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp_1, offset: 24
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex_1, offset: 32
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_bFromSweep, offset: 36
+       Expression:
+         $0: Local variable of type bool named bFromSweep. Parameter flags: (Parameter).
+Label_0x5D:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_SweepResult, offset: 40
+       Expression:
+         $48: Local out variable of type FHitResult named SweepResult. Parameter flags: (Parameter,Out,Reference,Const).
+Label_0x6F:
+     $5A: .. wire debug site ..
+Label_0x70:
+     $5E: .. debug site ..
+Label_0x71:
+     $46: Local Final Script Function (stack node BP_TurretProjectile_C::ExecuteUbergraph_BP_TurretProjectile)
+       $1D: literal int32 255
+       $16: EX_EndFunctionParms
+Label_0x80:
+     $5A: .. wire debug site ..
+Label_0x81:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x83:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_TurretProjectile_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature (96 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent, offset: 296
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor, offset: 304
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp, offset: 312
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex, offset: 320
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $5A: .. wire debug site ..
+Label_0x4C:
+     $5E: .. debug site ..
+Label_0x4D:
+     $46: Local Final Script Function (stack node BP_TurretProjectile_C::ExecuteUbergraph_BP_TurretProjectile)
+       $1D: literal int32 340
+       $16: EX_EndFunctionParms
+Label_0x5C:
+     $5A: .. wire debug site ..
+Label_0x5D:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x5F:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_TurretProjectile_ProjectileMovement_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature (42 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_ImpactResult, offset: 344
+       Expression:
+         $48: Local out variable of type FHitResult named ImpactResult. Parameter flags: (Parameter,Out,Reference,Const).
+Label_0x15:
+     $5A: .. wire debug site ..
+Label_0x16:
+     $5E: .. debug site ..
+Label_0x17:
+     $46: Local Final Script Function (stack node BP_TurretProjectile_C::ExecuteUbergraph_BP_TurretProjectile)
+       $1D: literal int32 343
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x29:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_TurretProjectile (353 bytes)
+Label_0x0:
+     $4C: FlowStack.Push(0x15E);
+Label_0x5:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xF:
+     $5E: .. debug site ..
+Label_0x10:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $1F: literal ansi string "hit"
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 0.000000
+         $1E: literal float 0.660000
+         $1E: literal float 1.000000
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x56:
+     $5A: .. wire debug site ..
+Label_0x57:
+     $5E: .. debug site ..
+Label_0x58:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type float named CallFunc_ApplyDamage_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $20: EX_ObjectConst (0000061A3CD4CF90:GameplayStatics /Script/Engine.Default__GameplayStatics)
+           Skip 0x1F bytes to offset 0x9F
+           R-Value Property: CallFunc_ApplyDamage_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node GameplayStatics::ApplyDamage)
+               $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char.
+               $1: Instance variable of type float named Base Damage.
+               $2A: EX_NoObject
+               $17: EX_Self
+               $2A: EX_NoObject
+               $16: EX_EndFunctionParms
+Label_0x9F:
+     $5A: .. wire debug site ..
+Label_0xA0:
+     $5E: .. debug site ..
+Label_0xA1:
+     $1B: Virtual Function named K2_DestroyActor
+       $16: EX_EndFunctionParms
+Label_0xAF:
+     $5A: .. wire debug site ..
+Label_0xB0:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0xB1:
+     $5E: .. debug site ..
+Label_0xB2:
+     $5A: .. wire debug site ..
+Label_0xB3:
+     $5E: .. debug site ..
+Label_0xB4:
+     $1B: Virtual Function named K2_DestroyActor
+       $16: EX_EndFunctionParms
+Label_0xC2:
+     $5A: .. wire debug site ..
+Label_0xC3:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0xC4:
+     $5E: .. debug site ..
+Label_0xC5:
+     $5A: .. wire debug site ..
+Label_0xC6:
+     $5E: .. debug site ..
+Label_0xC7:
+     $5A: .. wire debug site ..
+Label_0xC8:
+     $68: Call Math (stack node KismetSystemLibrary::Delay)
+       $17: EX_Self
+       $1E: literal float 8.000000
+       $2F: literal struct LatentActionInfo (serialized size: 32)
+         $5B: literal CodeSkipSizeType 0xB1
+         $1D: literal int32 739816958
+         $21: literal name ExecuteUbergraph_BP_TurretProjectile
+         $17: EX_Self
+         $30: EX_EndStructConst
+       $16: EX_EndFunctionParms
+Label_0xFE:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0xFF:
+     $5E: .. debug site ..
+Label_0x100:
+     $5A: .. wire debug site ..
+Label_0x101:
+     $5E: .. debug site ..
+Label_0x102:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char.
+       Expression:
+         $2E: DynamicCast to BP_PlayerChar_C of expr:
+           $0: Local variable of type AActor* named K2Node_ComponentBoundEvent_OtherActor_1.
+Label_0x126:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+       Expression:
+         $38: Cast of type 1 (ObjectToBool)
+           Argument:
+             $0: Local variable of type ABP_PlayerChar_C* named K2Node_DynamicCast_AsBP_Player_Char.
+Label_0x143:
+     $5A: .. wire debug site ..
+Label_0x144:
+     $4F: if (!condition) { if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! } }
+       $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+Label_0x14E:
+     $5A: .. wire debug site ..
+Label_0x14F:
+     $6: Jump to offset 0xF
+Label_0x154:
+     $5E: .. debug site ..
+Label_0x155:
+     $5A: .. wire debug site ..
+Label_0x156:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x157:
+     $5E: .. debug site ..
+Label_0x158:
+     $5A: .. wire debug site ..
+Label_0x159:
+     $6: Jump to offset 0xA0
+Label_0x15E:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x160:
+     $53: EX_EndOfScript
+
+
+-----------

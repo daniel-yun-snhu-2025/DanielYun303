@@ -1,0 +1,29 @@
+rax=3e85bb1641a517b0 rbx=00000000000002a9 rcx=000000000000bb44
+UnrealEditor_CoreUObject!FReferenceFinder::FindReferences+0x5e33:
+00007ffa`4f40d543 8b480c          mov     ecx,dword ptr [rax+0Ch] ds:3e85bb16`41a517bc=????????
+00 00000050`5fced190 00007ffa`4f448a7b     UnrealEditor_CoreUObject!FReferenceFinder::FindReferences+0x5e33
+01 00000050`5fcf7f20 00007ffa`4f3a2963     UnrealEditor_CoreUObject!UE::GC::ProcessAsync+0xca0b
+02 00000050`5fcff9f0 00007ffa`4f404a88     UnrealEditor_CoreUObject!Z_Construct_UScriptStruct_FStructCookedMetaDataStore+0x1f53
+03 00000050`5fcffa20 00007ffa`4f3971ee     UnrealEditor_CoreUObject!FStructProperty::EmitReferenceInfo+0x10f8
+04 00000050`5fcffa50 00007ffa`4f339944     UnrealEditor_CoreUObject!FJsonArchiveOutputFormatter::TryEnterField+0xce
+05 00000050`5fcffac0 00007ffa`4aaa24c5     UnrealEditor_CoreUObject!FPropertyLocalizationDataGatherer::CacheGatherableFieldsForType+0xfd4
+00 00000050`50b70490 00007ffa`4f448ad6     UnrealEditor_CoreUObject!UE::GC::StealWork+0x11f
+01 00000050`50b70510 00007ffa`4f3a2963     UnrealEditor_CoreUObject!UE::GC::ProcessAsync+0xca66
+02 00000050`50b77fe0 00007ffa`4f43c2bd     UnrealEditor_CoreUObject!Z_Construct_UScriptStruct_FStructCookedMetaDataStore+0x1f53
+03 00000050`50b78010 00007ffa`4f3b0471     UnrealEditor_CoreUObject!UE::GC::ProcessAsync+0x24d
+04 00000050`50b78150 00007ffa`4f43b368     UnrealEditor_CoreUObject!ConstructorHelpersInternal::FindOrLoadObject<UPackage>+0x6ee1
+05 00000050`50b781a0 00007ffa`4f43992c     UnrealEditor_CoreUObject!PerformIncrementalReachabilityAnalysis+0x1d58
+06 00000050`50b78290 00007ffa`4f3a508c     UnrealEditor_CoreUObject!PerformIncrementalReachabilityAnalysis+0x31c
+07 00000050`50b78350 00007ffa`4f3e54d3     UnrealEditor_CoreUObject!Z_Construct_UScriptStruct_FStructCookedMetaDataStore+0x467c
+08 00000050`50b78410 00007ffa`4f439789     UnrealEditor_CoreUObject!CollectGarbage+0x473
+09 00000050`50b79460 00007ffa`4f43a1c6     UnrealEditor_CoreUObject!PerformIncrementalReachabilityAnalysis+0x179
+0a 00000050`50b79490 00007ffa`4f4a4a84     UnrealEditor_CoreUObject!PerformIncrementalReachabilityAnalysis+0xbb6
+0b 00000050`50b79870 00007ffa`486c691b     UnrealEditor_CoreUObject!TryCollectGarbage+0x1b4
+0c 00000050`50b798d0 00007ffa`48638a1f     UnrealEditor_Engine!UEngine::PerformGarbageCollectionAndCleanupActors+0x15b
+0d 00000050`50b799a0 00007ffa`47591f4e     UnrealEditor_Engine!UEngine::ConditionalCollectGarbage+0xd2f
+0e 00000050`50b79d90 00007ffa`471cad38     UnrealEditor_Engine!UWorld::Tick+0x6dae
+0f 00000050`50b7b0e0 00007ff7`3ba68e0b     UnrealEditor_Engine!UGameEngine::Tick+0x1468
+10 00000050`50b7bb90 00007ff7`3ba8e33c     UnrealEditor+0x8e0b
+11 00000050`50b7dac0 00007ff7`3ba8e42a     UnrealEditor!EngineTick+0x606c
+12 00000050`50b7ebf0 00007ff7`3ba918a4     UnrealEditor!GuardedMainWrapper+0x1a
+13 00000050`50b7ec30 00007ff7`3baa70c4     UnrealEditor!LaunchWindowsStartup+0x1a4

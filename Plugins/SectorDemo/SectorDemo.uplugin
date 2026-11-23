@@ -1,0 +1,18 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Sector Nine Demo Driver",
+  "Description": "Development-only scripted walkthrough used to record repeatable evidence. Inactive unless the game is launched with -SectorNineDemo. Not compiled into Shipping builds.",
+  "Category": "Development",
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "Modules": [
+    {
+      "Name": "SectorDemo",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "TargetConfigurationDenyList": [ "Shipping" ]
+    }
+  ]
+}

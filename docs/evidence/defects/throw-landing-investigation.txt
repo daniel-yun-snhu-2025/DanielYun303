@@ -1,0 +1,45 @@
+# Throw landing / pressure plate consistency
+
+## Run 2 (before fix): thrown key slid ~600 units after landing; isHolding? stayed 1 after the toss
+Source: milestone-three/evidence/demo-editor-run2.log
+[2026.11.22-20.48.32:227][825]LogTemp: Display: SectorDemo track before_toss body=[2990,-1566,188] sim=0 attached=BP_PlayerChar_C_0 vel=[0,0,0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:328][836]LogTemp: Display: SectorDemo track flight body=[2990,-1566,188] sim=0 attached=BP_PlayerChar_C_0 vel=[0,0,0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:434][848]LogTemp: Display: SectorDemo track flight body=[2937,-1508,178] sim=1 attached=none vel=[-698,777,-173] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:538][860]LogTemp: Display: SectorDemo track flight body=[2864,-1427,154] sim=1 attached=none vel=[-697,776,-275] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:641][872]LogTemp: Display: SectorDemo track flight body=[2793,-1348,120] sim=1 attached=none vel=[-696,775,-375] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:744][884]LogTemp: Display: SectorDemo track flight body=[2733,-1280,115] sim=1 attached=none vel=[-567,640,10] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:845][896]LogTemp: Display: SectorDemo track flight body=[2676,-1215,112] sim=1 attached=none vel=[-561,630,-51] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.32:951][908]LogTemp: Display: SectorDemo track flight body=[2619,-1152,112] sim=1 attached=none vel=[-512,579,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:056][919]LogTemp: Display: SectorDemo track flight body=[2569,-1094,112] sim=1 attached=none vel=[-461,533,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:161][930]LogTemp: Display: SectorDemo track flight body=[2523,-1041,112] sim=1 attached=none vel=[-410,484,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:264][942]LogTemp: Display: SectorDemo track flight body=[2484,-994,112] sim=1 attached=none vel=[-362,434,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:369][955]LogTemp: Display: SectorDemo track flight body=[2448,-951,112] sim=1 attached=none vel=[-314,380,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:470][967]LogTemp: Display: SectorDemo track flight body=[2419,-916,112] sim=1 attached=none vel=[-268,329,0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:577][980]LogTemp: Display: SectorDemo track flight body=[2393,-884,112] sim=1 attached=none vel=[-224,273,0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:678][992]LogTemp: Display: SectorDemo track flight body=[2373,-859,112] sim=1 attached=none vel=[-184,220,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:779][  4]LogTemp: Display: SectorDemo track flight body=[2356,-840,112] sim=1 attached=none vel=[-144,166,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:883][ 15]LogTemp: Display: SectorDemo track flight body=[2344,-826,112] sim=1 attached=none vel=[-102,110,-0] holding=1 door=0 button_overlaps=[]
+[2026.11.22-20.48.33:987][ 27]LogTemp: Display: SectorDemo track flight body=[2336,-817,112] sim=1 attached=none vel=[-59,54,0] holding=1 door=0 button_overlaps=[]
+
+## Package build-05 run (landing settle only): key landed on the plate, door unlocked, key drifted off, original EndOverlap re-locked the door
+Source: milestone-three/integration-build-05/Windows/DanielYun303/Saved/SectorDemo/timeline.jsonl
+{"utc":"2026-11-22T22:16:05.199Z","t":17.71,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2948,-1585,188] sim=0 attached=BP_PlayerChar_C_2147482393 vel=[0,0,0] holding=1 door1=1/0deg door2=0/0deg plate=[]"}
+{"utc":"2026-11-22T22:16:05.301Z","t":17.82,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2898,-1532,178] sim=1 attached=none vel=[-721,755,-171] holding=0 door1=1/0deg door2=0/0deg plate=[]"}
+{"utc":"2026-11-22T22:16:05.407Z","t":17.92,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2822,-1452,154] sim=1 attached=none vel=[-720,754,-275] holding=0 door1=1/0deg door2=0/0deg plate=[]"}
+{"utc":"2026-11-22T22:16:05.513Z","t":18.02,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2749,-1375,121] sim=1 attached=none vel=[0,0,-211] holding=0 door1=1/0deg door2=1/0deg plate=[BP_PhysicsPickup_C_2,BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:05.620Z","t":18.13,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2755,-1381,119] sim=1 attached=none vel=[63,-45,-28] holding=0 door1=1/0deg door2=1/0deg plate=[BP_PhysicsPickup_C_2,BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:05.723Z","t":18.24,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2760,-1384,119] sim=1 attached=none vel=[33,-23,20] holding=0 door1=1/0deg door2=1/0deg plate=[BP_PhysicsPickup_C_2,BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:05.830Z","t":18.34,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2763,-1386,120] sim=1 attached=none vel=[26,-4,2] holding=0 door1=1/0deg door2=1/0deg plate=[BP_PhysicsPickup_C_2,BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:05.935Z","t":18.45,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2766,-1385,119] sim=1 attached=none vel=[29,15,-8] holding=0 door1=1/0deg door2=1/0deg plate=[BP_PhysicsPickup_C_2,BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.038Z","t":18.55,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2770,-1383,118] sim=1 attached=none vel=[49,7,-22] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.141Z","t":18.66,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2776,-1382,114] sim=1 attached=none vel=[67,8,-60] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.245Z","t":18.76,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2781,-1381,113] sim=1 attached=none vel=[28,0,-9] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.352Z","t":18.87,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2782,-1382,112] sim=1 attached=none vel=[-3,-0,3] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.454Z","t":18.97,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2782,-1382,112] sim=1 attached=none vel=[0,0,0] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+{"utc":"2026-11-22T22:16:06.558Z","t":19.07,"map":"TestEnvironment","event":"track","detail":"flight player=[3028,-1668,190] key=[2782,-1382,112] sim=1 attached=none vel=[0,0,0] holding=0 door1=1/0deg door2=0/0deg plate=[BP_Button_C_2]"}
+
+## Package build-06 (plate seating): 3/3 repeat runs seated the key at the plate centre
+Source: milestone-three/evidence/package-repeat/run*/game.log
+[2026.11.22-22.20.51:308][524]LogTemp: Display: SectorThrow seated BP_PhysicsPickup_C_2 on BP_Button_C_2 at X=2740.000 Y=-1365.000 Z=120.153
+[2026.11.22-22.21.42:983][425]LogTemp: Display: SectorThrow seated BP_PhysicsPickup_C_2 on BP_Button_C_2 at X=2740.000 Y=-1365.000 Z=120.588
+[2026.11.22-22.22.33:527][323]LogTemp: Display: SectorThrow seated BP_PhysicsPickup_C_2 on BP_Button_C_2 at X=2740.000 Y=-1365.000 Z=119.970

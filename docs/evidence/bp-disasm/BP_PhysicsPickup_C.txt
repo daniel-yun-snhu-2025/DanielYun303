@@ -1,0 +1,342 @@
+  Processing function UserConstructionScript (157 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UStaticMeshComponent* named Cube.
+           Skip 0x29 bytes to offset 0x4C
+           R-Value Property: CallFunc_CreateDynamicMaterialInstance_ReturnValue
+           ContextExpression:
+             $1B: Virtual Function named CreateDynamicMaterialInstance
+               $1D: literal int32 0
+               $20: EX_ObjectConst (000007178F56C400:Material /Game/Interactables/AnimatedInteractables/MAT_Color.MAT_Color)
+               $21: literal name None
+               $16: EX_EndFunctionParms
+Label_0x4C:
+     $5A: .. wire debug site ..
+Label_0x4D:
+     $5E: .. debug site ..
+Label_0x4E:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Expression:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+Label_0x61:
+     $5A: .. wire debug site ..
+Label_0x62:
+     $5E: .. debug site ..
+Label_0x63:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Skip 0x20 bytes to offset 0x99
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node MaterialInstanceDynamic::SetVectorParameterValue)
+           $21: literal name Color
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x99:
+     $5A: .. wire debug site ..
+Label_0x9A:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x9C:
+     $53: EX_EndOfScript
+
+  Processing function INT_Interact (42 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_PlayerRef, offset: 8
+       Expression:
+         $0: Local variable of type ABP_PlayerChar_C* named PlayerRef. Parameter flags: (Parameter).
+Label_0x15:
+     $5A: .. wire debug site ..
+Label_0x16:
+     $5E: .. debug site ..
+Label_0x17:
+     $46: Local Final Script Function (stack node BP_PhysicsPickup_C::ExecuteUbergraph_BP_PhysicsPickup)
+       $1D: literal int32 15
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x29:
+     $53: EX_EndOfScript
+
+  Processing function INT_Drop (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_PhysicsPickup_C::ExecuteUbergraph_BP_PhysicsPickup)
+       $1D: literal int32 324
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function Apply New Mat (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_PhysicsPickup_C::ExecuteUbergraph_BP_PhysicsPickup)
+       $1D: literal int32 479
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_PhysicsPickup (585 bytes)
+Label_0x0:
+     $4C: FlowStack.Push(0x246);
+Label_0x5:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xF:
+     $5E: .. debug site ..
+Label_0x10:
+     $5A: .. wire debug site ..
+Label_0x11:
+     $5E: .. debug site ..
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $7: Jump to offset 0x39 if not expr:
+       $19: Context
+         ObjectExpression:
+           $0: Local variable of type ABP_PlayerChar_C* named K2Node_Event_PlayerRef.
+         Skip 0x9 bytes to offset 0x37
+         R-Value Property: isHolding?
+         ContextExpression:
+           $1: Instance variable of type bool named isHolding?.
+Label_0x37:
+     $5A: .. wire debug site ..
+Label_0x38:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x39:
+     $5E: .. debug site ..
+Label_0x3A:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $19: Context
+           ObjectExpression:
+             $0: Local variable of type ABP_PlayerChar_C* named K2Node_Event_PlayerRef.
+           Skip 0x9 bytes to offset 0x5A
+           R-Value Property: isHolding?
+           ContextExpression:
+             $1: Instance variable of type bool named isHolding?.
+       Expression:
+         $27: EX_True
+Label_0x5B:
+     $5A: .. wire debug site ..
+Label_0x5C:
+     $5E: .. debug site ..
+Label_0x5D:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UStaticMeshComponent* named Cube.
+       Skip 0xF bytes to offset 0x82
+       R-Value Property: (null)
+       ContextExpression:
+         $1B: Virtual Function named SetSimulatePhysics
+           $28: EX_False
+           $16: EX_EndFunctionParms
+Label_0x82:
+     $5A: .. wire debug site ..
+Label_0x83:
+     $5E: .. debug site ..
+Label_0x84:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UStaticMeshComponent* named Cube.
+       Skip 0x10 bytes to offset 0xAA
+       R-Value Property: (null)
+       ContextExpression:
+         $1B: Virtual Function named SetCollisionEnabled
+           $24: literal byte 0
+           $16: EX_EndFunctionParms
+Label_0xAA:
+     $5A: .. wire debug site ..
+Label_0xAB:
+     $5E: .. debug site ..
+Label_0xAC:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_K2_AttachToComponent_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UStaticMeshComponent* named Cube.
+           Skip 0x3D bytes to offset 0x109
+           R-Value Property: CallFunc_K2_AttachToComponent_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node SceneComponent::K2_AttachToComponent)
+               $19: Context
+                 ObjectExpression:
+                   $0: Local variable of type ABP_PlayerChar_C* named K2Node_Event_PlayerRef.
+                 Skip 0x9 bytes to offset 0xF4
+                 R-Value Property: Arrow1
+                 ContextExpression:
+                   $1: Instance variable of type UArrowComponent* named Arrow1.
+               $21: literal name None
+               $24: literal byte 2
+               $24: literal byte 0
+               $24: literal byte 0
+               $27: EX_True
+               $16: EX_EndFunctionParms
+Label_0x109:
+     $5A: .. wire debug site ..
+Label_0x10A:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x10B:
+     $5E: .. debug site ..
+Label_0x10C:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Skip 0x20 bytes to offset 0x142
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node MaterialInstanceDynamic::SetVectorParameterValue)
+           $21: literal name Color
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x142:
+     $5A: .. wire debug site ..
+Label_0x143:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x144:
+     $5E: .. debug site ..
+Label_0x145:
+     $5A: .. wire debug site ..
+Label_0x146:
+     $5E: .. debug site ..
+Label_0x147:
+     $1C: Final Function (stack node Actor::K2_DetachFromActor)
+       $24: literal byte 1
+       $24: literal byte 1
+       $24: literal byte 1
+       $16: EX_EndFunctionParms
+Label_0x157:
+     $5A: .. wire debug site ..
+Label_0x158:
+     $5E: .. debug site ..
+Label_0x159:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UStaticMeshComponent* named Cube.
+       Skip 0x10 bytes to offset 0x17F
+       R-Value Property: (null)
+       ContextExpression:
+         $1B: Virtual Function named SetCollisionEnabled
+           $24: literal byte 3
+           $16: EX_EndFunctionParms
+Label_0x17F:
+     $5A: .. wire debug site ..
+Label_0x180:
+     $5E: .. debug site ..
+Label_0x181:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UStaticMeshComponent* named Cube.
+       Skip 0xF bytes to offset 0x1A6
+       R-Value Property: (null)
+       ContextExpression:
+         $1B: Virtual Function named SetSimulatePhysics
+           $27: EX_True
+           $16: EX_EndFunctionParms
+Label_0x1A6:
+     $5A: .. wire debug site ..
+Label_0x1A7:
+     $5E: .. debug site ..
+Label_0x1A8:
+     $68: Call Math (stack node KismetSystemLibrary::Delay)
+       $17: EX_Self
+       $1E: literal float 0.200000
+       $2F: literal struct LatentActionInfo (serialized size: 32)
+         $1D: literal int32 -1
+         $1D: literal int32 -1432198090
+         $21: literal name ExecuteUbergraph_BP_PhysicsPickup
+         $17: EX_Self
+         $30: EX_EndStructConst
+       $16: EX_EndFunctionParms
+Label_0x1DE:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x1DF:
+     $5E: .. debug site ..
+Label_0x1E0:
+     $5A: .. wire debug site ..
+Label_0x1E1:
+     $5E: .. debug site ..
+Label_0x1E2:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UStaticMeshComponent* named Cube.
+           Skip 0x29 bytes to offset 0x22B
+           R-Value Property: CallFunc_CreateDynamicMaterialInstance_ReturnValue
+           ContextExpression:
+             $1B: Virtual Function named CreateDynamicMaterialInstance
+               $1D: literal int32 0
+               $20: EX_ObjectConst (000007178F56C400:Material /Game/Interactables/AnimatedInteractables/MAT_Color.MAT_Color)
+               $21: literal name None
+               $16: EX_EndFunctionParms
+Label_0x22B:
+     $5A: .. wire debug site ..
+Label_0x22C:
+     $5E: .. debug site ..
+Label_0x22D:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Expression:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+Label_0x240:
+     $5A: .. wire debug site ..
+Label_0x241:
+     $6: Jump to offset 0x10B
+Label_0x246:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x248:
+     $53: EX_EndOfScript
+
+
+-----------

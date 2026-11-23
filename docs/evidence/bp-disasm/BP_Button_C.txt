@@ -1,0 +1,594 @@
+  Processing function UserConstructionScript (157 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UStaticMeshComponent* named Button.
+           Skip 0x29 bytes to offset 0x4C
+           R-Value Property: CallFunc_CreateDynamicMaterialInstance_ReturnValue
+           ContextExpression:
+             $1B: Virtual Function named CreateDynamicMaterialInstance
+               $1D: literal int32 0
+               $20: EX_ObjectConst (000007178F56C400:Material /Game/Interactables/AnimatedInteractables/MAT_Color.MAT_Color)
+               $21: literal name None
+               $16: EX_EndFunctionParms
+Label_0x4C:
+     $5A: .. wire debug site ..
+Label_0x4D:
+     $5E: .. debug site ..
+Label_0x4E:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Expression:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+Label_0x61:
+     $5A: .. wire debug site ..
+Label_0x62:
+     $5E: .. debug site ..
+Label_0x63:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Skip 0x20 bytes to offset 0x99
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node MaterialInstanceDynamic::SetVectorParameterValue)
+           $21: literal name Color
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x99:
+     $5A: .. wire debug site ..
+Label_0x9A:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x9C:
+     $53: EX_EndOfScript
+
+  Processing function Alpha__FinishedFunc (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Button_C::ExecuteUbergraph_BP_Button)
+       $1D: literal int32 425
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function Alpha__UpdateFunc (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Button_C::ExecuteUbergraph_BP_Button)
+       $1D: literal int32 1299
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_Button_Overlap_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature (132 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent_1, offset: 40
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor_1, offset: 48
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp_1, offset: 56
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex_1, offset: 64
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_bFromSweep, offset: 68
+       Expression:
+         $0: Local variable of type bool named bFromSweep. Parameter flags: (Parameter).
+Label_0x5D:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_SweepResult, offset: 72
+       Expression:
+         $48: Local out variable of type FHitResult named SweepResult. Parameter flags: (Parameter,Out,Reference,Const).
+Label_0x6F:
+     $5A: .. wire debug site ..
+Label_0x70:
+     $5E: .. debug site ..
+Label_0x71:
+     $46: Local Final Script Function (stack node BP_Button_C::ExecuteUbergraph_BP_Button)
+       $1D: literal int32 487
+       $16: EX_EndFunctionParms
+Label_0x80:
+     $5A: .. wire debug site ..
+Label_0x81:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x83:
+     $53: EX_EndOfScript
+
+  Processing function BndEvt__BP_Button_Overlap_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature (96 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OverlappedComponent, offset: 328
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OverlappedComponent. Parameter flags: (Parameter).
+Label_0x15:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherActor, offset: 336
+       Expression:
+         $0: Local variable of type AActor* named OtherActor. Parameter flags: (Parameter).
+Label_0x27:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherComp, offset: 344
+       Expression:
+         $0: Local variable of type UPrimitiveComponent* named OtherComp. Parameter flags: (Parameter).
+Label_0x39:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_ComponentBoundEvent_OtherBodyIndex, offset: 352
+       Expression:
+         $0: Local variable of type int32 named OtherBodyIndex. Parameter flags: (Parameter).
+Label_0x4B:
+     $5A: .. wire debug site ..
+Label_0x4C:
+     $5E: .. debug site ..
+Label_0x4D:
+     $46: Local Final Script Function (stack node BP_Button_C::ExecuteUbergraph_BP_Button)
+       $1D: literal int32 873
+       $16: EX_EndFunctionParms
+Label_0x5C:
+     $5A: .. wire debug site ..
+Label_0x5D:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x5F:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_Button (1309 bytes)
+Label_0x0:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xA:
+     $5E: .. debug site ..
+Label_0xB:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $1F: literal ansi string "It is not PhysicsPickup"
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 1.000000
+         $1E: literal float 0.095488
+         $1E: literal float 0.215237
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x65:
+     $5A: .. wire debug site ..
+Label_0x66:
+     $6: Jump to offset 0x51A
+Label_0x6B:
+     $5E: .. debug site ..
+Label_0x6C:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UTimelineComponent* named Alpha.
+       Skip 0xA bytes to offset 0x8C
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node TimelineComponent::Reverse)
+           $16: EX_EndFunctionParms
+Label_0x8C:
+     $5A: .. wire debug site ..
+Label_0x8D:
+     $6: Jump to offset 0x51A
+Label_0x92:
+     $5E: .. debug site ..
+Label_0x93:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UTimelineComponent* named Alpha.
+       Skip 0xA bytes to offset 0xB3
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node TimelineComponent::Play)
+           $16: EX_EndFunctionParms
+Label_0xB3:
+     $5A: .. wire debug site ..
+Label_0xB4:
+     $6: Jump to offset 0x51A
+Label_0xB9:
+     $5E: .. debug site ..
+Label_0xBA:
+     $5A: .. wire debug site ..
+Label_0xBB:
+     $5E: .. debug site ..
+Label_0xBC:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $1F: literal ansi string "Forgot To Link Door"
+       $27: EX_True
+       $27: EX_True
+       $2F: literal struct LinearColor (serialized size: 16)
+         $1E: literal float 0.000000
+         $1E: literal float 0.660000
+         $1E: literal float 1.000000
+         $1E: literal float 1.000000
+         $30: EX_EndStructConst
+       $1E: literal float 2.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x112:
+     $5A: .. wire debug site ..
+Label_0x113:
+     $6: Jump to offset 0x51A
+Label_0x118:
+     $5E: .. debug site ..
+Label_0x119:
+     $5A: .. wire debug site ..
+Label_0x11A:
+     $5E: .. debug site ..
+Label_0x11B:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type ABP_Door_C* named TargetDoor.
+           Skip 0x9 bytes to offset 0x13B
+           R-Value Property: isUnlocked
+           ContextExpression:
+             $1: Instance variable of type bool named isUnlocked.
+       Expression:
+         $27: EX_True
+Label_0x13C:
+     $5A: .. wire debug site ..
+Label_0x13D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+       Expression:
+         $1C: Final Function (stack node Actor::K2_GetActorLocation)
+           $16: EX_EndFunctionParms
+Label_0x159:
+     $5E: .. debug site ..
+Label_0x15A:
+     $68: Call Math (stack node GameplayStatics::PlaySoundAtLocation)
+       $17: EX_Self
+       $20: EX_ObjectConst (0000071792756000:SoundWave /Engine/VREditor/Sounds/UI/Camera_Shutter.Camera_Shutter)
+       $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+       $22: literal rotation (0.000000,0.000000,0.000000)
+       $1E: literal float 1.000000
+       $1E: literal float 1.000000
+       $1E: literal float 0.000000
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $16: EX_EndFunctionParms
+Label_0x1A3:
+     $5A: .. wire debug site ..
+Label_0x1A4:
+     $6: Jump to offset 0x92
+Label_0x1A9:
+     $5E: .. debug site ..
+Label_0x1AA:
+     $5A: .. wire debug site ..
+Label_0x1AB:
+     $6: Jump to offset 0x51A
+Label_0x1B0:
+     $5E: .. debug site ..
+Label_0x1B1:
+     $5A: .. wire debug site ..
+Label_0x1B2:
+     $5E: .. debug site ..
+Label_0x1B3:
+     $5A: .. wire debug site ..
+Label_0x1B4:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_IsValid_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetSystemLibrary::IsValid)
+           $1: Instance variable of type ABP_Door_C* named TargetDoor.
+           $16: EX_EndFunctionParms
+Label_0x1D1:
+     $5E: .. debug site ..
+Label_0x1D2:
+     $5A: .. wire debug site ..
+Label_0x1D3:
+     $7: Jump to offset 0xB9 if not expr:
+       $0: Local variable of type bool named CallFunc_IsValid_ReturnValue.
+Label_0x1E1:
+     $5A: .. wire debug site ..
+Label_0x1E2:
+     $6: Jump to offset 0x118
+Label_0x1E7:
+     $5E: .. debug site ..
+Label_0x1E8:
+     $5A: .. wire debug site ..
+Label_0x1E9:
+     $5E: .. debug site ..
+Label_0x1EA:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup.
+       Expression:
+         $2E: DynamicCast to BP_PhysicsPickup_C of expr:
+           $0: Local variable of type AActor* named K2Node_ComponentBoundEvent_OtherActor_1.
+Label_0x20E:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+       Expression:
+         $38: Cast of type 1 (ObjectToBool)
+           Argument:
+             $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup.
+Label_0x22B:
+     $5A: .. wire debug site ..
+Label_0x22C:
+     $7: Jump to offset 0xA if not expr:
+       $0: Local variable of type bool named K2Node_DynamicCast_bSuccess.
+Label_0x23A:
+     $5A: .. wire debug site ..
+Label_0x23B:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FString named CallFunc_Conv_ColorToString_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetStringLibrary::Conv_ColorToString)
+           $19: Context
+             ObjectExpression:
+               $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup.
+             Skip 0x9 bytes to offset 0x275
+             R-Value Property: PickupColor
+             ContextExpression:
+               $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x276:
+     $5E: .. debug site ..
+Label_0x277:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $0: Local variable of type FString named CallFunc_Conv_ColorToString_ReturnValue.
+       $27: EX_True
+       $27: EX_True
+       $19: Context
+         ObjectExpression:
+           $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup.
+         Skip 0x9 bytes to offset 0x2AB
+         R-Value Property: PickupColor
+         ContextExpression:
+           $1: Instance variable of type FLinearColor named PickupColor.
+       $1E: literal float 5.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x2BE:
+     $5A: .. wire debug site ..
+Label_0x2BF:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FString named CallFunc_Conv_ColorToString_ReturnValue_1.
+       Expression:
+         $68: Call Math (stack node KismetStringLibrary::Conv_ColorToString)
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x2E4:
+     $5E: .. debug site ..
+Label_0x2E5:
+     $68: Call Math (stack node KismetSystemLibrary::PrintString)
+       $17: EX_Self
+       $0: Local variable of type FString named CallFunc_Conv_ColorToString_ReturnValue_1.
+       $27: EX_True
+       $27: EX_True
+       $1: Instance variable of type FLinearColor named PickupColor.
+       $1E: literal float 5.000000
+       $21: literal name None
+       $16: EX_EndFunctionParms
+Label_0x316:
+     $5A: .. wire debug site ..
+Label_0x317:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_EqualEqual_LinearColorLinearColor_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::EqualEqual_LinearColorLinearColor)
+           $19: Context
+             ObjectExpression:
+               $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup.
+             Skip 0x9 bytes to offset 0x349
+             R-Value Property: PickupColor
+             ContextExpression:
+               $1: Instance variable of type FLinearColor named PickupColor.
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x353:
+     $5E: .. debug site ..
+Label_0x354:
+     $5A: .. wire debug site ..
+Label_0x355:
+     $7: Jump to offset 0x51A if not expr:
+       $0: Local variable of type bool named CallFunc_EqualEqual_LinearColorLinearColor_ReturnValue.
+Label_0x363:
+     $5A: .. wire debug site ..
+Label_0x364:
+     $6: Jump to offset 0x1B0
+Label_0x369:
+     $5E: .. debug site ..
+Label_0x36A:
+     $5A: .. wire debug site ..
+Label_0x36B:
+     $5E: .. debug site ..
+Label_0x36C:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup_1.
+       Expression:
+         $2E: DynamicCast to BP_PhysicsPickup_C of expr:
+           $0: Local variable of type AActor* named K2Node_ComponentBoundEvent_OtherActor.
+Label_0x390:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named K2Node_DynamicCast_bSuccess_1.
+       Expression:
+         $38: Cast of type 1 (ObjectToBool)
+           Argument:
+             $0: Local variable of type ABP_PhysicsPickup_C* named K2Node_DynamicCast_AsBP_Physics_Pickup_1.
+Label_0x3AD:
+     $5A: .. wire debug site ..
+Label_0x3AE:
+     $7: Jump to offset 0x51A if not expr:
+       $0: Local variable of type bool named K2Node_DynamicCast_bSuccess_1.
+Label_0x3BC:
+     $5A: .. wire debug site ..
+Label_0x3BD:
+     $5E: .. debug site ..
+Label_0x3BE:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type ABP_Door_C* named TargetDoor.
+           Skip 0x9 bytes to offset 0x3DE
+           R-Value Property: isUnlocked
+           ContextExpression:
+             $1: Instance variable of type bool named isUnlocked.
+       Expression:
+         $28: EX_False
+Label_0x3DF:
+     $5A: .. wire debug site ..
+Label_0x3E0:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+       Expression:
+         $1C: Final Function (stack node Actor::K2_GetActorLocation)
+           $16: EX_EndFunctionParms
+Label_0x3FC:
+     $5E: .. debug site ..
+Label_0x3FD:
+     $68: Call Math (stack node GameplayStatics::PlaySoundAtLocation)
+       $17: EX_Self
+       $20: EX_ObjectConst (0000071792755000:SoundWave /Engine/EditorSounds/Notifications/CompileFailed.CompileFailed)
+       $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+       $22: literal rotation (0.000000,0.000000,0.000000)
+       $1E: literal float 1.000000
+       $1E: literal float 1.000000
+       $1E: literal float 0.000000
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $2A: EX_NoObject
+       $16: EX_EndFunctionParms
+Label_0x446:
+     $5A: .. wire debug site ..
+Label_0x447:
+     $6: Jump to offset 0x6B
+Label_0x44C:
+     $5E: .. debug site ..
+Label_0x44D:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Lerp_Alpha_ImplicitCast.
+       Expression:
+         $38: Cast of type 4 (FloatToDouble)
+           Argument:
+             $1: Instance variable of type float named Alpha_AlphaTrack_12B2174B47AF4722DF18B78597FCCE64.
+Label_0x46A:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Lerp_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::Lerp)
+           $37: literal double 5.000000
+           $37: literal double 1.000000
+           $0: Local variable of type double named CallFunc_Lerp_Alpha_ImplicitCast.
+           $16: EX_EndFunctionParms
+Label_0x4A1:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_MakeVector_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::MakeVector)
+           $37: literal double 0.000000
+           $37: literal double 0.000000
+           $0: Local variable of type double named CallFunc_Lerp_ReturnValue.
+           $16: EX_EndFunctionParms
+Label_0x4D8:
+     $5E: .. debug site ..
+Label_0x4D9:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UStaticMeshComponent* named Button.
+       Skip 0x1E bytes to offset 0x50D
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node SceneComponent::K2_SetRelativeLocation)
+           $0: Local variable of type FVector named CallFunc_MakeVector_ReturnValue.
+           $28: EX_False
+           $0: Local variable of type FHitResult named CallFunc_K2_SetRelativeLocation_SweepHitResult.
+           $28: EX_False
+           $16: EX_EndFunctionParms
+Label_0x50D:
+     $5A: .. wire debug site ..
+Label_0x50E:
+     $6: Jump to offset 0x51A
+Label_0x513:
+     $5E: .. debug site ..
+Label_0x514:
+     $5A: .. wire debug site ..
+Label_0x515:
+     $6: Jump to offset 0x44D
+Label_0x51A:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x51C:
+     $53: EX_EndOfScript
+
+
+-----------

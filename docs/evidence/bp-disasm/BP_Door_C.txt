@@ -1,0 +1,466 @@
+  Processing function UpdateDoorAngle (395 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $0: Local variable of type AActor* named self2. Parameter flags: (Parameter).
+           Skip 0xA bytes to offset 0x34
+           R-Value Property: CallFunc_K2_GetActorLocation_ReturnValue
+           ContextExpression:
+             $1C: Final Function (stack node Actor::K2_GetActorLocation)
+               $16: EX_EndFunctionParms
+Label_0x34:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named Temp_real_Variable.
+       Expression:
+         $37: literal double 90.000000
+Label_0x4F:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named Temp_real_Variable_1.
+       Expression:
+         $37: literal double -90.000000
+Label_0x6A:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_GetActorForwardVector_ReturnValue.
+       Expression:
+         $1C: Final Function (stack node Actor::GetActorForwardVector)
+           $16: EX_EndFunctionParms
+Label_0x86:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+       Expression:
+         $1C: Final Function (stack node Actor::K2_GetActorLocation)
+           $16: EX_EndFunctionParms
+Label_0xA2:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FVector named CallFunc_GetDirectionUnitVector_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::GetDirectionUnitVector)
+           $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue_1.
+           $0: Local variable of type FVector named CallFunc_K2_GetActorLocation_ReturnValue.
+           $16: EX_EndFunctionParms
+Label_0xD0:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Dot_VectorVector_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::Dot_VectorVector)
+           $0: Local variable of type FVector named CallFunc_GetDirectionUnitVector_ReturnValue.
+           $0: Local variable of type FVector named CallFunc_GetActorForwardVector_ReturnValue.
+           $16: EX_EndFunctionParms
+Label_0xFE:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_GreaterEqual_DoubleDouble_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::GreaterEqual_DoubleDouble)
+           $0: Local variable of type double named CallFunc_Dot_VectorVector_ReturnValue.
+           $37: literal double 0.000000
+           $16: EX_EndFunctionParms
+Label_0x124:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named Temp_bool_Variable.
+       Expression:
+         $0: Local variable of type bool named CallFunc_GreaterEqual_DoubleDouble_ReturnValue.
+Label_0x137:
+     $5E: .. debug site ..
+Label_0x138:
+     $F: Let (Variable = Expression)
+       Variable:
+         $48: Local out variable of type double named ReturnValue. Parameter flags: (Parameter,Out,Return).
+       Expression:
+         $69: Switch Value 2 cases, end in 0x17F
+           Index:
+             $0: Local variable of type bool named Temp_bool_Variable.
+           [0] Case Index (label: 0x15A):
+             $28: EX_False
+           [0] Offset to the next case: 0x168
+           [0] Case Result:
+             $0: Local variable of type double named Temp_real_Variable_1.
+           [1] Case Index (label: 0x168):
+             $27: EX_True
+           [1] Offset to the next case: 0x176
+           [1] Case Result:
+             $0: Local variable of type double named Temp_real_Variable.
+           Default result (label: 0x176):
+             $0: Local variable of type double named K2Node_Select_Default.
+           (label: 0x17F)
+Label_0x17F:
+     $5A: .. wire debug site ..
+Label_0x180:
+     $4: Return expression
+       $48: Local out variable of type double named ReturnValue. Parameter flags: (Parameter,Out,Return).
+Label_0x18A:
+     $53: EX_EndOfScript
+
+  Processing function UserConstructionScript (157 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+       Expression:
+         $19: Context
+           ObjectExpression:
+             $1: Instance variable of type UStaticMeshComponent* named Cube.
+           Skip 0x29 bytes to offset 0x4C
+           R-Value Property: CallFunc_CreateDynamicMaterialInstance_ReturnValue
+           ContextExpression:
+             $1B: Virtual Function named CreateDynamicMaterialInstance
+               $1D: literal int32 0
+               $20: EX_ObjectConst (000007178F56C400:Material /Game/Interactables/AnimatedInteractables/MAT_Color.MAT_Color)
+               $21: literal name None
+               $16: EX_EndFunctionParms
+Label_0x4C:
+     $5A: .. wire debug site ..
+Label_0x4D:
+     $5E: .. debug site ..
+Label_0x4E:
+     $5F: Let Obj (Variable = Expression)
+       Variable:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Expression:
+         $0: Local variable of type UMaterialInstanceDynamic* named CallFunc_CreateDynamicMaterialInstance_ReturnValue.
+Label_0x61:
+     $5A: .. wire debug site ..
+Label_0x62:
+     $5E: .. debug site ..
+Label_0x63:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UMaterialInstanceDynamic* named ColorDMI.
+       Skip 0x20 bytes to offset 0x99
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node MaterialInstanceDynamic::SetVectorParameterValue)
+           $21: literal name Color
+           $1: Instance variable of type FLinearColor named PickupColor.
+           $16: EX_EndFunctionParms
+Label_0x99:
+     $5A: .. wire debug site ..
+Label_0x9A:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x9C:
+     $53: EX_EndOfScript
+
+  Processing function Timeline__FinishedFunc (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Door_C::ExecuteUbergraph_BP_Door)
+       $1D: literal int32 496
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function Timeline__UpdateFunc (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Door_C::ExecuteUbergraph_BP_Door)
+       $1D: literal int32 272
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function INT_Drop (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Door_C::ExecuteUbergraph_BP_Door)
+       $1D: literal int32 160
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function INT_Interact (42 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $64: LetValueOnPersistentFrame
+       Destination variable: K2Node_Event_PlayerRef, offset: 8
+       Expression:
+         $0: Local variable of type ABP_PlayerChar_C* named PlayerRef. Parameter flags: (Parameter).
+Label_0x15:
+     $5A: .. wire debug site ..
+Label_0x16:
+     $5E: .. debug site ..
+Label_0x17:
+     $46: Local Final Script Function (stack node BP_Door_C::ExecuteUbergraph_BP_Door)
+       $1D: literal int32 264
+       $16: EX_EndFunctionParms
+Label_0x26:
+     $5A: .. wire debug site ..
+Label_0x27:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x29:
+     $53: EX_EndOfScript
+
+  Processing function Reversetimeline (22 bytes)
+Label_0x0:
+     $5E: .. debug site ..
+Label_0x1:
+     $5A: .. wire debug site ..
+Label_0x2:
+     $5E: .. debug site ..
+Label_0x3:
+     $46: Local Final Script Function (stack node BP_Door_C::ExecuteUbergraph_BP_Door)
+       $1D: literal int32 489
+       $16: EX_EndFunctionParms
+Label_0x12:
+     $5A: .. wire debug site ..
+Label_0x13:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x15:
+     $53: EX_EndOfScript
+
+  Processing function ExecuteUbergraph_BP_Door (506 bytes)
+Label_0x0:
+     $4C: FlowStack.Push(0x1F7);
+Label_0x5:
+     $4E: Computed Jump, offset specified by expression:
+         $0: Local variable of type int32 named EntryPoint. Parameter flags: (Parameter).
+Label_0xF:
+     $5E: .. debug site ..
+Label_0x10:
+     $5A: .. wire debug site ..
+Label_0x11:
+     $5E: .. debug site ..
+Label_0x12:
+     $45: Local Virtual Script Function named Reversetimeline
+       $16: EX_EndFunctionParms
+Label_0x20:
+     $5A: .. wire debug site ..
+Label_0x21:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x22:
+     $5E: .. debug site ..
+Label_0x23:
+     $5A: .. wire debug site ..
+Label_0x24:
+     $4F: if (!condition) { if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! } }
+       $1: Instance variable of type bool named isUnlocked.
+Label_0x2E:
+     $5A: .. wire debug site ..
+Label_0x2F:
+     $5E: .. debug site ..
+Label_0x30:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_UpdateDoorAngle_ReturnValue.
+       Expression:
+         $45: Local Virtual Script Function named UpdateDoorAngle
+           $0: Local variable of type ABP_PlayerChar_C* named K2Node_Event_PlayerRef.
+           $16: EX_EndFunctionParms
+Label_0x59:
+     $5A: .. wire debug site ..
+Label_0x5A:
+     $5E: .. debug site ..
+Label_0x5B:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UTimelineComponent* named Timeline.
+       Skip 0xA bytes to offset 0x7B
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node TimelineComponent::PlayFromStart)
+           $16: EX_EndFunctionParms
+Label_0x7B:
+     $5A: .. wire debug site ..
+Label_0x7C:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x7D:
+     $5E: .. debug site ..
+Label_0x7E:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UTimelineComponent* named Timeline.
+       Skip 0xA bytes to offset 0x9E
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node TimelineComponent::ReverseFromEnd)
+           $16: EX_EndFunctionParms
+Label_0x9E:
+     $5A: .. wire debug site ..
+Label_0x9F:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0xA0:
+     $5E: .. debug site ..
+Label_0xA1:
+     $5A: .. wire debug site ..
+Label_0xA2:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0xA3:
+     $14: LetBool (Variable = Expression)
+       Variable:
+         $0: Local variable of type bool named CallFunc_EqualEqual_ByteByte_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::EqualEqual_ByteByte)
+           $1: Instance variable of type TEnumAsByte<ETimelineDirection::Type> named Timeline__Direction_2808427B41D3B4D3A66849BAF3C9D063.
+           $24: literal byte 0
+           $16: EX_EndFunctionParms
+Label_0xC2:
+     $5E: .. debug site ..
+Label_0xC3:
+     $5A: .. wire debug site ..
+Label_0xC4:
+     $4F: if (!condition) { if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! } }
+       $0: Local variable of type bool named CallFunc_EqualEqual_ByteByte_ReturnValue.
+Label_0xCE:
+     $5A: .. wire debug site ..
+Label_0xCF:
+     $5E: .. debug site ..
+Label_0xD0:
+     $5A: .. wire debug site ..
+Label_0xD1:
+     $68: Call Math (stack node KismetSystemLibrary::Delay)
+       $17: EX_Self
+       $1E: literal float 1.000000
+       $2F: literal struct LatentActionInfo (serialized size: 32)
+         $5B: literal CodeSkipSizeType 0xF
+         $1D: literal int32 -628401947
+         $21: literal name ExecuteUbergraph_BP_Door
+         $17: EX_Self
+         $30: EX_EndStructConst
+       $16: EX_EndFunctionParms
+Label_0x107:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x108:
+     $5E: .. debug site ..
+Label_0x109:
+     $5A: .. wire debug site ..
+Label_0x10A:
+     $6: Jump to offset 0x22
+Label_0x10F:
+     $5E: .. debug site ..
+Label_0x110:
+     $5E: .. debug site ..
+Label_0x111:
+     $5A: .. wire debug site ..
+Label_0x112:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Lerp_Alpha_ImplicitCast.
+       Expression:
+         $38: Cast of type 4 (FloatToDouble)
+           Argument:
+             $1: Instance variable of type float named Timeline_Alpha_2808427B41D3B4D3A66849BAF3C9D063.
+Label_0x12F:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type double named CallFunc_Lerp_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::Lerp)
+           $37: literal double 0.000000
+           $0: Local variable of type double named CallFunc_UpdateDoorAngle_ReturnValue.
+           $0: Local variable of type double named CallFunc_Lerp_Alpha_ImplicitCast.
+           $16: EX_EndFunctionParms
+Label_0x166:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type float named CallFunc_MakeRotator_Yaw_ImplicitCast.
+       Expression:
+         $38: Cast of type 3 (DoubleToFloat)
+           Argument:
+             $0: Local variable of type double named CallFunc_Lerp_ReturnValue.
+Label_0x183:
+     $F: Let (Variable = Expression)
+       Variable:
+         $0: Local variable of type FRotator named CallFunc_MakeRotator_ReturnValue.
+       Expression:
+         $68: Call Math (stack node KismetMathLibrary::MakeRotator)
+           $1E: literal float 0.000000
+           $1E: literal float 0.000000
+           $0: Local variable of type float named CallFunc_MakeRotator_Yaw_ImplicitCast.
+           $16: EX_EndFunctionParms
+Label_0x1B2:
+     $5E: .. debug site ..
+Label_0x1B3:
+     $19: Context
+       ObjectExpression:
+         $1: Instance variable of type UArrowComponent* named Arrow.
+       Skip 0x1E bytes to offset 0x1E7
+       R-Value Property: (null)
+       ContextExpression:
+         $1C: Final Function (stack node SceneComponent::K2_SetRelativeRotation)
+           $0: Local variable of type FRotator named CallFunc_MakeRotator_ReturnValue.
+           $28: EX_False
+           $0: Local variable of type FHitResult named CallFunc_K2_SetRelativeRotation_SweepHitResult.
+           $28: EX_False
+           $16: EX_EndFunctionParms
+Label_0x1E7:
+     $5A: .. wire debug site ..
+Label_0x1E8:
+     $4D: if (FlowStack.Num()) { jump to statement at FlowStack.Pop(); } else { ERROR!!! }
+Label_0x1E9:
+     $5E: .. debug site ..
+Label_0x1EA:
+     $5A: .. wire debug site ..
+Label_0x1EB:
+     $6: Jump to offset 0x7D
+Label_0x1F0:
+     $5E: .. debug site ..
+Label_0x1F1:
+     $5A: .. wire debug site ..
+Label_0x1F2:
+     $6: Jump to offset 0xA3
+Label_0x1F7:
+     $4: Return expression
+       $B: EX_Nothing
+Label_0x1F9:
+     $53: EX_EndOfScript
+
+
+-----------

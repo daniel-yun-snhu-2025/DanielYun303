@@ -1,0 +1,6 @@
+LogPluginManager: Mounting Project plugin SectorDemo
+LogPluginManager: Mounting Project plugin SectorFieldUI
+LogPluginManager: Mounting Project plugin SectorNineEnemyAI
+LogPluginManager: Mounting Project plugin SectorThrow
+LogInit: Command Line: -windowed -ResX=1280 -ResY=720 -NoSplash -nosound
+SectorDemo log lines: 0

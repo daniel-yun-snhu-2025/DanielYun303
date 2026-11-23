@@ -1,0 +1,16 @@
+Input_Movement: W
+Input_Movement: S
+Input_Movement: A
+Input_Movement: D
+Input_look: Mouse2D
+Input_Jump: SpaceBar
+Input_Toss: R
+Input_Interact: E
+Input_Fire: LeftMouseButton
+Health: 100.0
+Amor: 0.0
+Score: 0
+isHolding?: False
+HitObject: None
+HealthPackCount: 0
+Character: Failed to find property 'Ammo' for attribute 'Ammo' on 'BP_PlayerChar_C'
